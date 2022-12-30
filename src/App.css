@@ -1,0 +1,65 @@
+#moon {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-image: url("./Assets/moon.jpg");
+  background-position: center;
+  position: absolute;
+  /* top: 15%;
+  left: 46.3%;
+  box-shadow: inset 0px -25px 25px 8px black; */
+  animation: moon 45s ease-in-out alternate infinite;
+}
+
+@keyframes moon {
+  0% {
+    top: 25%;
+    left: 60%;
+    box-shadow: inset -50px 0px 30px 8px black;
+  }
+
+  25% {
+    top: 20%;
+    left: 55%;
+    box-shadow: inset -50px 25px 30px 8px black;
+  }
+
+  50% {
+    top: 15%;
+    left: 46.3%;
+    /* box-shadow: inset 0px 12px 25px 0px black; */
+    box-shadow: inset 0px -25px 25px 8px black;
+  }
+
+  75% {
+    top: 20%;
+    left: 36.3%;
+    box-shadow: inset 50px 25px 30px 8px black;
+  }
+
+  100% {
+    top: 25%;
+    left: 30%;
+    box-shadow: inset 50px 0px 30px black;
+  }
+}
+
+#earth {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-image: url("./Assets/erth1.jpg");
+  background-position: center;
+  box-shadow: inset 0px -125px 75px 0px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: earth 120s linear alternate infinite;
+}
+
+@keyframes earth {
+  100% {
+    background-position: 100%;
+  }
+}
