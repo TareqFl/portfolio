@@ -1,13 +1,11 @@
 #moon {
-  height: 600px;
-  width: 600px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
   background-image: url("./Assets/moon.jpg");
   background-position: center;
-  top: 0%;
-  left: 0%;
-  box-shadow: inset 0px -150px 100px 50px black;
-  position: absolute;
+
+  box-shadow: inset 22px 0px 10px 0px black;
 }
 
 @keyframes spin {
@@ -62,26 +60,26 @@
 }
 
 #sun {
-  background-image: url("../../sun2.jpg");
+  background-image: url("./Assets/sun2.jpg");
   background-position: center;
   animation: sun 120s linear alternate infinite;
 }
 
 @keyframes sun {
   0% {
-    background-image: url("../../sun4.jpg");
+    background-image: url("./Assets/sun4.jpg");
     background-position: center;
     background-size: stretch;
   }
 
   50% {
-    background-image: url("../../sun.jpg");
+    background-image: url("./Assets/sun.jpg");
     background-position: center;
     background-size: stretch;
   }
 
   100% {
-    background-image: url("../../sun4.jpg");
+    background-image: url("./Assets/sun4.jpg");
     background-position: center;
     background-size: stretch;
   }

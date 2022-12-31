@@ -13,7 +13,14 @@ const App = () => {
       }}
     >
       <CssBaseline />
-      {/* <Box id="moon"></Box> */}
+      <Box
+        id="moon"
+        sx={{
+          top: "25%",
+          left: { xs: "5%", sm: "25%" },
+          position: "absolute",
+        }}
+      ></Box>
       <Box
         id="earth"
         sx={{
@@ -56,7 +63,7 @@ const App = () => {
         <Box
           sx={{
             position: "absolute",
-            top: "25%",
+            top: { xs: "50%", sm: "25%" },
             right: { xs: "10%", sm: "15%" },
             zIndex: 2,
           }}
