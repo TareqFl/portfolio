@@ -1,14 +1,19 @@
 #moon {
-  height: 150px;
-  width: 150px;
+  height: 600px;
+  width: 600px;
   border-radius: 50%;
   background-image: url("./Assets/moon.jpg");
   background-position: center;
+  top: 0%;
+  left: 0%;
+  box-shadow: inset 0px -150px 100px 50px black;
   position: absolute;
-  /* top: 15%;
-  left: 46.3%;
-  box-shadow: inset 0px -25px 25px 8px black; */
-  animation: moon 45s ease-in-out alternate infinite;
+}
+
+@keyframes spin {
+  100% {
+    background-position: 100%;
+  }
 }
 
 @keyframes moon {
@@ -45,21 +50,39 @@
 }
 
 #earth {
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
   background-image: url("./Assets/erth1.jpg");
   background-position: center;
-  box-shadow: inset 0px -125px 75px 0px black;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   animation: earth 120s linear alternate infinite;
 }
 
 @keyframes earth {
   100% {
     background-position: 100%;
+  }
+}
+
+#sun {
+  background-image: url("../../sun2.jpg");
+  background-position: center;
+  animation: sun 120s linear alternate infinite;
+}
+
+@keyframes sun {
+  0% {
+    background-image: url("../../sun4.jpg");
+    background-position: center;
+    background-size: stretch;
+  }
+
+  50% {
+    background-image: url("../../sun.jpg");
+    background-position: center;
+    background-size: stretch;
+  }
+
+  100% {
+    background-image: url("../../sun4.jpg");
+    background-position: center;
+    background-size: stretch;
   }
 }
