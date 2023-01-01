@@ -93,6 +93,26 @@ const App = () => {
             GitHub
           </Link>
           <Link
+            href="https://tareqfl.github.io/WhatsApp-Desktop-clone/"
+            display="list-item"
+            sx={{
+              textDecoration: "none",
+              color: "white",
+              fontWeight: "bold",
+              mt: 2,
+              "&:hover": {
+                letterSpacing: "2px",
+
+                WebkitTextStroke: "1px darkorange",
+                color: "gold",
+                ml: 2,
+              },
+              transition: "all 1s",
+            }}
+          >
+            WhatsApp (Desktop clone)
+          </Link>
+          <Link
             href="https://tareqfl.github.io/T-shirt-Generator/"
             display="list-item"
             sx={{
@@ -112,6 +132,7 @@ const App = () => {
           >
             Shirt Shack (Live Website)
           </Link>
+
           <Link
             href="https://tareqfl.github.io/Seat-Chart-Generator-New/"
             display="list-item"
