@@ -62,7 +62,7 @@
 #sun {
   background-image: url("./Assets/sun2.jpg");
   background-position: center;
-  animation: sun 70s linear alternate infinite;
+  animation: sun 60s linear alternate infinite;
 }
 
 @keyframes sun {
