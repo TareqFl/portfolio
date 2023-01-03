@@ -22,7 +22,7 @@ const App = () => {
           top: "25%",
           left: { xs: "5%", sm: "25%" },
           position: "absolute",
-          filter: "blur(0.8px)",
+          filter: "blur(0.7px)",
         }}
       ></Box>
       <Box
