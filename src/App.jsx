@@ -23,6 +23,10 @@ const App = () => {
           left: { xs: "5%", sm: "25%" },
           position: "absolute",
           filter: "blur(0.7px)",
+          "&:hover": {
+            filter: "blur(5px)",
+            transition: "1s",
+          },
         }}
       ></Box>
       <Box
@@ -38,6 +42,10 @@ const App = () => {
           transform: "translate(-50%,-50%)",
           zIndex: 2,
           filter: "blur(0px)",
+          "&:hover": {
+            filter: "blur(5px)",
+            transition: "1s",
+          },
         }}
       ></Box>
 
@@ -49,12 +57,17 @@ const App = () => {
           borderRadius: "50%",
 
           boxShadow:
-            "0px 0px 65px 0px darkorange,inset 0px 0px 70px 7px darkorange",
+            "0px 0px 25px 0px darkorange,inset 0px 0px 70px 7px darkorange",
           position: "absolute",
           top: "25%",
           left: "60%",
           zIndex: 0,
           filter: "blur(0.8px)",
+          "&:hover": {
+            transform: "scale(1.1)",
+            filter: "blur(0px)",
+            transition: "1s",
+          },
         }}
       ></Box>
 
