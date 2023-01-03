@@ -28,6 +28,8 @@ const App = () => {
             transition: "1s",
             cursor: "pointer",
           },
+
+          transition: "1s",
         }}
       ></Box>
       <Box
@@ -48,6 +50,8 @@ const App = () => {
             transition: "1s",
             cursor: "pointer",
           },
+
+          transition: "1s",
         }}
       ></Box>
 
@@ -71,6 +75,7 @@ const App = () => {
             transition: "1s",
             cursor: "pointer",
           },
+          transition: "1s",
         }}
       ></Box>
 
