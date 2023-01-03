@@ -49,7 +49,7 @@ const App = () => {
           borderRadius: "50%",
 
           boxShadow:
-            "0px 0px 500px 50px darkorange,inset 0px 0px 70px 7px darkorange",
+            "0px 0px 65px 0px darkorange,inset 0px 0px 70px 7px darkorange",
           position: "absolute",
           top: "25%",
           left: "60%",
