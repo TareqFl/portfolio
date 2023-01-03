@@ -26,6 +26,7 @@ const App = () => {
           "&:hover": {
             filter: "blur(5px)",
             transition: "1s",
+            cursor: "pointer",
           },
         }}
       ></Box>
@@ -45,6 +46,7 @@ const App = () => {
           "&:hover": {
             filter: "blur(5px)",
             transition: "1s",
+            cursor: "pointer",
           },
         }}
       ></Box>
@@ -67,6 +69,7 @@ const App = () => {
             transform: "scale(1.1)",
             filter: "blur(0px)",
             transition: "1s",
+            cursor: "pointer",
           },
         }}
       ></Box>
