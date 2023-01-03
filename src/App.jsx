@@ -1,6 +1,7 @@
 import { Box, CssBaseline, Fade, Link, Typography } from "@mui/material";
 import React from "react";
 import "./App.css";
+import stars from "./Assets/stars.png";
 const App = () => {
   return (
     <Box
@@ -12,6 +13,8 @@ const App = () => {
         overflow: "hidden",
       }}
     >
+      <img src={stars} alt="stars" style={{ filter: "blur(2px)" }} />
+
       <CssBaseline />
       <Box
         id="moon"
@@ -19,6 +22,7 @@ const App = () => {
           top: "25%",
           left: { xs: "5%", sm: "25%" },
           position: "absolute",
+          filter: "blur(0.8px)",
         }}
       ></Box>
       <Box
@@ -33,6 +37,7 @@ const App = () => {
           left: "50%",
           transform: "translate(-50%,-50%)",
           zIndex: 2,
+          filter: "blur(0px)",
         }}
       ></Box>
 
@@ -49,13 +54,7 @@ const App = () => {
           top: "25%",
           left: "60%",
           zIndex: 0,
-
-          // "&:hover": {
-          //   transform: "scale(1.5)",
-          //   cursor: "pointer",
-          //   left: "59%",
-          // },
-          transition: "all 10s",
+          filter: "blur(0.8px)",
         }}
       ></Box>
 
