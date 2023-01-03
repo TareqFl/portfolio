@@ -25,11 +25,9 @@ const App = () => {
           filter: "blur(0.7px)",
           "&:hover": {
             filter: "blur(5px)",
-            transition: "1s",
             cursor: "pointer",
           },
-
-          transition: "1s",
+          transition: "filter 1s",
         }}
       ></Box>
       <Box
