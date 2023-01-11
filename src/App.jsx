@@ -42,7 +42,7 @@ const App = () => {
           left: "50%",
           transform: "translate(-50%,-50%)",
           zIndex: 2,
-          filter: "blur(0px)",
+          filter: "blur(1px)",
           "&:hover": {
             filter: "blur(5px)",
             transition: "1s",
@@ -69,7 +69,7 @@ const App = () => {
           filter: "blur(0.8px)",
           "&:hover": {
             transform: "scale(1.1)",
-            filter: "blur(0px)",
+            filter: "blur(1px)",
             transition: "1s",
             cursor: "pointer",
           },

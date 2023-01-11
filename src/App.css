@@ -4,6 +4,7 @@
   border-radius: 50%;
   background-image: url("./Assets/moon.jpg");
   background-position: center;
+  filter: blur(1px);
   box-shadow: inset 22px 0px 10px 0px black;
 }
 
@@ -61,7 +62,7 @@
 #sun {
   background-image: url("./Assets/sun2.jpg");
   background-position: center;
-  animation: sun 60s linear alternate infinite;
+  animation: sun 30s alternate linear infinite;
 }
 
 @keyframes sun {
@@ -70,8 +71,17 @@
     background-position: center;
     background-size: stretch;
   }
-
+  25% {
+    background-image: url("./Assets/sun.jpg");
+    background-position: center;
+    background-size: stretch;
+  }
   50% {
+    background-image: url("./Assets/sun4.jpg");
+    background-position: center;
+    background-size: stretch;
+  }
+  75% {
     background-image: url("./Assets/sun.jpg");
     background-position: center;
     background-size: stretch;
