@@ -1,215 +1,238 @@
-import { Box, CssBaseline, Fade, Link, Typography } from "@mui/material";
+import {
+  GitHub,
+  Home,
+  Instagram,
+  Lightbulb,
+  LinkedIn,
+  Person,
+  Phonelink,
+  RocketLaunch,
+  Speed,
+} from "@mui/icons-material";
+import {
+  Box,
+  CssBaseline,
+  Divider,
+  Grid,
+  IconButton,
+  Paper,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React from "react";
-import "./App.css";
-import stars from "./Assets/stars.png";
+import InfoCard from "./Components/InfoCard/InfoCard";
+import ProjectCard from "./Components/ProjectCards/ProjectCard";
+import * as style from "./styles";
+import shirtShack from "./Assets/shirtShack.png";
+import seat from "./Assets/seatGen.png";
+import stream from "./Assets/stream.png";
+import wtsp from "./Assets/whatsap.png";
+import ec from "./Assets/e-commerve.png";
+import Footer from "./Components/Footer/Footer";
+import Aboutme from "./Components/AboutMe/Aboutme";
+import DisplayPicture from "./Components/DisplayPicture&Skills/DisplayPicture";
+import Skills from "./Components/DisplayPicture&Skills/Skills";
 const App = () => {
-  return (
-    <Box
-      sx={{
-        height: "100vh",
-        width: "100vw",
-        backgroundColor: "black",
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
-      <img src={stars} alt="stars" style={{ filter: "blur(2px)" }} />
+  const RepeatedSocialIcons = ({ icon, onClick }) => {
+    return (
+      <IconButton className="iconButton" size="small" onClick={onClick}>
+        {icon}
+      </IconButton>
+    );
+  };
 
-      <CssBaseline />
-      <Box
-        id="moon"
-        sx={{
-          top: "25%",
-          left: { xs: "5%", sm: "25%" },
-          position: "absolute",
-          filter: "blur(0.7px)",
-          "&:hover": {
-            filter: "blur(5px)",
-            cursor: "pointer",
-          },
-          transition: "filter 1s",
-        }}
-      ></Box>
-      <Box
-        id="earth"
-        sx={{
-          height: "300px",
-          width: "300px",
-          borderRadius: "50%",
-          boxShadow: "inset 0px -125px 50px 15px black",
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%,-50%)",
-          zIndex: 2,
-          filter: "blur(1px)",
-          "&:hover": {
-            filter: "blur(5px)",
-            transition: "1s",
-            cursor: "pointer",
-          },
-
-          transition: "1s",
-        }}
-      ></Box>
-
-      <Box
-        id="sun"
-        sx={{
-          height: "125px",
-          width: "125px",
-          borderRadius: "50%",
-
-          boxShadow:
-            "0px 0px 25px 0px darkorange,inset 0px 0px 70px 7px darkorange",
-          position: "absolute",
-          top: "25%",
-          left: "60%",
-          zIndex: 0,
-          filter: "blur(0.8px)",
-          "&:hover": {
-            transform: "scale(1.1)",
-            filter: "blur(1px)",
-            transition: "1s",
-            cursor: "pointer",
-          },
-          transition: "1s",
-        }}
-      ></Box>
-
-      <Fade in={true} timeout={1500}>
-        <Box
-          sx={{
-            position: "absolute",
-            top: { xs: "50%", sm: "25%" },
-            right: { xs: "10%", sm: "15%" },
-            zIndex: 2,
-          }}
-        >
-          <Typography variant="h6" color="#fff">
-            Site is Currently Under Construction
-          </Typography>
-
-          <Link
-            href=" https://github.com/TareqFl"
-            display="list-item"
-            sx={{
-              textDecoration: "none",
-              color: "white",
-              fontWeight: "bold",
-              mt: 2,
-              "&:hover": {
-                letterSpacing: "4px",
-
-                WebkitTextStroke: "1px darkorange",
-                color: "gold",
-                ml: 2,
-              },
-              transition: "all 1s",
-            }}
-          >
-            GitHub
-          </Link>
-          <Link
-            href="https://tareqfl.github.io/WhatsApp-Desktop-clone/"
-            display="list-item"
-            sx={{
-              textDecoration: "none",
-              color: "white",
-              fontWeight: "bold",
-              mt: 2,
-              "&:hover": {
-                letterSpacing: "2px",
-
-                WebkitTextStroke: "1px darkorange",
-                color: "gold",
-                ml: 2,
-              },
-              transition: "all 1s",
-            }}
-          >
-            WhatsApp (Desktop clone)
-          </Link>
-          <Link
-            href="https://tareqfl.github.io/T-shirt-Generator/"
-            display="list-item"
-            sx={{
-              textDecoration: "none",
-              color: "white",
-              fontWeight: "bold",
-              mt: 2,
-              "&:hover": {
-                letterSpacing: "2px",
-
-                WebkitTextStroke: "1px darkorange",
-                color: "gold",
-                ml: 2,
-              },
-              transition: "all 1s",
-            }}
-          >
-            Shirt Shack (Live Website)
-          </Link>
-
-          <Link
-            href="https://tareqfl.github.io/Seat-Chart-Generator-New/"
-            display="list-item"
-            sx={{
-              textDecoration: "none",
-              color: "white",
-              fontWeight: "bold",
-              mt: 2,
-              "&:hover": {
-                letterSpacing: "1px",
-                WebkitTextStroke: "1px darkorange",
-                ml: 2,
-                color: "gold",
-              },
-              transition: "all 1s",
-            }}
-          >
-            Seat Chart Generator (Live Website)
-          </Link>
-          <Link
-            href="https://www.youtube.com/watch?v=UczVwMII5zM&t=4s"
-            display="list-item"
-            sx={{
-              textDecoration: "none",
-              color: "white",
-              fontWeight: "bold",
-              mt: 2,
-              "&:hover": {
-                letterSpacing: "2px",
-                WebkitTextStroke: "1px darkorange",
-                color: "gold",
-                ml: 2,
-              },
-              transition: "all 1s",
-            }}
-          >
-            Stream Web App (old Video)
-          </Link>
-          <Link
-            href="https://www.youtube.com/watch?v=DwtvLMmZAvk&t=21s"
-            display="list-item"
-            sx={{
-              textDecoration: "none",
-              color: "white",
-              fontWeight: "bold",
-              mt: 2,
-              "&:hover": {
-                letterSpacing: "2px",
-                WebkitTextStroke: "1px darkorange",
-                color: "gold",
-                ml: 2,
-              },
-              transition: "all 1s",
-            }}
-          >
-            E-commerce (Old Video)
-          </Link>
+  const RepeatedTags = ({ text }) => {
+    return (
+      <Grid item>
+        <Box className="TagsContainer">
+          <Typography className="Tags">{text}</Typography>
         </Box>
-      </Fade>
+      </Grid>
+    );
+  };
+
+  return (
+    <Box sx={{ ...style.container }}>
+      <CssBaseline />
+      <Stack
+        display="flex"
+        direction="row"
+        justifyContent="space-between"
+        alignItems="center"
+        spacing={1}
+      >
+        <Paper sx={{ ...style.paper }}>
+          <Stack
+            display="flex"
+            direction="row"
+            className="homePage"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <Typography color="white" className="homeText">
+              Home Page
+            </Typography>
+            <IconButton className="homeIconButton" size="small">
+              <Home className="homeIcon" />
+            </IconButton>
+          </Stack>
+        </Paper>
+
+        <Stack direction="row" spacing={1} className="socialIcons">
+          <RepeatedSocialIcons
+            icon={<GitHub className="socialIcon" sx={{ color: "white" }} />}
+            onClick={() => window.open("https://github.com/TareqFl")}
+          />
+          <RepeatedSocialIcons
+            onClick={() =>
+              window.open("https://www.instagram.com/tarekfleifl/")
+            }
+            icon={<Instagram className="socialIcon" sx={{ color: "white" }} />}
+          />
+          <RepeatedSocialIcons
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/tareq-fleifel-809900107/"
+              )
+            }
+            icon={<LinkedIn className="socialIcon" sx={{ color: "white" }} />}
+          />
+        </Stack>
+        <IconButton className="menu">
+          <Box className="menuText">
+            <Typography color="white" component={"h6"}>
+              Menu
+            </Typography>
+          </Box>
+        </IconButton>
+      </Stack>
+      <InfoCard />
+      <Grid container gap={1}>
+        <RepeatedTags text="FullStack Developer" />
+        <RepeatedTags text="FrontEnd Engineer" />
+        <RepeatedTags text="BackEnd Engineer" />
+      </Grid>
+      <Grid container sx={{ transition: "1s" }}>
+        <ProjectCard
+          status="live Website"
+          title={"Custom T-Shirt Generator"}
+          src={shirtShack}
+          info={
+            "Make your own Custom tshirt,integrating with payment system and the app is ready to go."
+          }
+          bgColor="transparent"
+          buttonColor="darkorange"
+          shadow="black"
+          onClick={() =>
+            window.open("https://tareqfl.github.io/T-shirt-Generator/")
+          }
+        />
+        <ProjectCard
+          status="Video"
+          title={"Stream"}
+          src={stream}
+          info={
+            "Streaming platform inspired by twitch and youtube.using Google Outh2 authentication."
+          }
+          bgColor="transparent"
+          shadow="#99154E"
+          buttonColor="#99154E"
+          onClick={() =>
+            window.open("https://www.youtube.com/watch?v=UczVwMII5zM&t=4s")
+          }
+        />
+        <ProjectCard
+          status="live Website"
+          title={"Seat Chart Generator"}
+          src={seat}
+          info={
+            "A seat chart generator for theaters or concerts  with the ability to price and to divide by sections."
+          }
+          bgColor="transparent"
+          buttonColor="#FFAB4C"
+          shadow="#FFAB4C"
+          onClick={() =>
+            window.open("https://tareqfl.github.io/Seat-Chart-Generator-New/")
+          }
+        />
+
+        <ProjectCard
+          status="live Website"
+          title={"WhatsApp Desktop clone"}
+          src={wtsp}
+          info={"A dummy Whatsapp desktop application clone,because why not?"}
+          bgColor="transparent"
+          buttonColor="#9CC094"
+          shadow="#9CC094"
+          onClick={() =>
+            window.open("https://tareqfl.github.io/WhatsApp-Desktop-clone/")
+          }
+        />
+
+        <ProjectCard
+          status="Video"
+          title={"E-commerce"}
+          src={ec}
+          info={
+            "A fully integrated E-commerce website with stripe payment and authentication."
+          }
+          bgColor="black"
+          shadow="#FFEEAD"
+          buttonColor="#FFEEAD"
+          onClick={() =>
+            window.open("https://www.youtube.com/watch?v=DwtvLMmZAvk&t=21s")
+          }
+        />
+      </Grid>
+
+      <Paper sx={{ ...style.paper }}>
+        <Stack
+          display="flex"
+          direction="row"
+          className="homePage"
+          justifyContent="space-between"
+          alignItems="center"
+        >
+          <Typography color="white" className="homeText">
+            About
+          </Typography>
+          <IconButton className="homeIconButton" size="small">
+            <Person className="homeIcon" />
+          </IconButton>
+        </Stack>
+      </Paper>
+      <Grid
+        container
+        gap={2}
+        sx={{ justifyContent: "center", alignItems: "center", width: "100%" }}
+      >
+        <Aboutme
+          bgColor="#c54444"
+          icon={<Speed sx={{ fontSize: { xs: "1rem", sm: "2rem" } }} />}
+          typography="Speed"
+        />
+        <Aboutme
+          bgColor="#dfb921"
+          icon={<Lightbulb />}
+          typography="intuitive"
+        />
+        <Aboutme
+          bgColor="#839292"
+          icon={<Phonelink />}
+          typography="Responsive"
+        />
+        <Aboutme
+          bgColor="#9a82c2"
+          icon={<RocketLaunch />}
+          typography="Dynamic"
+        />
+      </Grid>
+      <Grid container gap={4} sx={{ p: 1 }}>
+        <DisplayPicture />
+        <Skills />
+      </Grid>
+      <Divider sx={{ backgroundColor: "white" }} />
+      <Footer />
     </Box>
   );
 };
