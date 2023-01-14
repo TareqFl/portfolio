@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.91280aae.css",
-    "main.js": "/portfolio/static/js/main.bf45f2b6.js",
-    "static/media/sun.jpg": "/portfolio/static/media/sun.2527d3719da783f5ca47.jpg",
-    "static/media/stars.png": "/portfolio/static/media/stars.90c266f7d69f1ffb6137.png",
-    "static/media/moon.jpg": "/portfolio/static/media/moon.678c1373f1b0262159bd.jpg",
-    "static/media/sun2.jpg": "/portfolio/static/media/sun2.31ed1be40f1843ce7ca5.jpg",
-    "static/media/erth1.jpg": "/portfolio/static/media/erth1.c5f4ceecbe2b115c1034.jpg",
-    "static/media/sun4.jpg": "/portfolio/static/media/sun4.45eae081a872166a81c4.jpg",
+    "main.js": "/portfolio/static/js/main.676a8d91.js",
+    "static/media/e-commerve.png": "/portfolio/static/media/e-commerve.0d7b0cc3985cf4322ccd.png",
+    "static/media/stream.png": "/portfolio/static/media/stream.771c2cadcd90a6bd8187.png",
+    "static/media/shirtShack.png": "/portfolio/static/media/shirtShack.797ad0506ddde5b1ee5a.png",
+    "static/media/nobg3.png": "/portfolio/static/media/nobg3.2a7319e6c760108017ef.png",
+    "static/media/seatGen.png": "/portfolio/static/media/seatGen.94faa80aaf67714bf7e1.png",
+    "static/media/whatsap.png": "/portfolio/static/media/whatsap.577894b28072aec60e1a.png",
+    "static/media/clouds.jpg": "/portfolio/static/media/clouds.c80647d16aca8300786d.jpg",
     "index.html": "/portfolio/index.html",
-    "main.91280aae.css.map": "/portfolio/static/css/main.91280aae.css.map",
-    "main.bf45f2b6.js.map": "/portfolio/static/js/main.bf45f2b6.js.map"
+    "main.676a8d91.js.map": "/portfolio/static/js/main.676a8d91.js.map"
   },
   "entrypoints": [
-    "static/css/main.91280aae.css",
-    "static/js/main.bf45f2b6.js"
+    "static/js/main.676a8d91.js"
   ]
 }
