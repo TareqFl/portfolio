@@ -28,7 +28,6 @@ import seat from "./Assets/seatGen.png";
 import stream from "./Assets/stream.png";
 import wtsp from "./Assets/whatsap.png";
 import ec from "./Assets/e-commerve.png";
-import Footer from "./Components/Footer/Footer";
 import Aboutme from "./Components/AboutMe/Aboutme";
 import DisplayPicture from "./Components/DisplayPicture&Skills/DisplayPicture";
 import Skills from "./Components/DisplayPicture&Skills/Skills";
@@ -232,7 +231,6 @@ const App = () => {
         <Skills />
       </Grid>
       <Divider sx={{ backgroundColor: "white" }} />
-      <Footer />
     </Box>
   );
 };
