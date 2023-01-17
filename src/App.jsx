@@ -207,7 +207,7 @@ const App = () => {
       >
         <Aboutme
           bgColor="#c54444"
-          icon={<Speed sx={{ fontSize: { xs: "1rem", sm: "2rem" } }} />}
+          icon={<Speed sx={{ fontSize: { xs: "2rem", sm: "2rem" } }} />}
           typography="Speed"
         />
         <Aboutme

@@ -9,8 +9,8 @@ const Aboutme = ({ bgColor, typography, icon }) => {
     >
       <Box
         sx={{
-          width: { xs: "90%", sm: "85%", md: "65%", lg: "45%", xl: "40%" },
-          height: { xs: "50px", sm: "100px" },
+          width: { xs: "90%", sm: "75%", md: "65%", lg: "45%", xl: "55%" },
+          height: { xs: "50px", sm: "90px" },
           borderRadius: 50,
           display: "flex",
           flexDirection: "column",
@@ -24,7 +24,7 @@ const Aboutme = ({ bgColor, typography, icon }) => {
           sx={{
             color: "white",
             fontWeight: "bold",
-            fontSize: { xs: "0.5rem", sm: "1rem" },
+            fontSize: { xs: "0.4rem", sm: "0.9rem" },
           }}
         >
           {typography}
