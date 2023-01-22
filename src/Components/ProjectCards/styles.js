@@ -1,5 +1,5 @@
 export const container = {
-  transition: "0.75s",
+  transition: "1s",
   transitionDelay: "0.35s",
   p: 1,
   "& .stack": {

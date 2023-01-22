@@ -20,6 +20,15 @@ const ProjectCard = ({
   buttonColor,
   shadow,
 }) => {
+  const [myGrid, setMyGrid] = React.useState({
+    xs: 6,
+    sm: 4,
+    md: 6,
+    lg: 2,
+  });
+
+  const { xs, sm, md, lg } = myGrid;
+
   const [arrows, setArrows] = React.useState({
     arrow1: styles.arrow1,
     arrow2: styles.arrow2,
@@ -27,8 +36,22 @@ const ProjectCard = ({
     bgtext: "white",
   });
   const { arrow1, arrow2, bg, bgtext } = arrows;
+
+  React.useEffect(() => {
+    setTimeout(
+      () =>
+        setMyGrid({
+          xs: 12,
+          sm: 6,
+          md: 4,
+          lg: 3,
+        }),
+      1000
+    );
+  }, []);
+
   return (
-    <Grid item xs={12} sm={6} md={4} lg={3} sx={{ ...styles.container }}>
+    <Grid item xs={xs} sm={sm} md={md} lg={lg} sx={{ ...styles.container }}>
       <Paper
         className="stack"
         sx={{
