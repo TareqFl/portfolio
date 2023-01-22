@@ -92,6 +92,7 @@ const ProjectCard = ({
               className="goTo"
               size="small"
               sx={{
+                overflow: "hidden",
                 backgroundColor: buttonColor ? buttonColor : "white",
                 "&:hover": {
                   backgroundColor: buttonColor ? buttonColor : "white",

@@ -23,6 +23,7 @@ import React from "react";
 import InfoCard from "./Components/InfoCard/InfoCard";
 import ProjectCard from "./Components/ProjectCards/ProjectCard";
 import * as style from "./styles";
+import sandbox from "./Assets/sandbox.png";
 import shirtShack from "./Assets/shirtShack.png";
 import seat from "./Assets/seatGen.png";
 import stream from "./Assets/stream.png";
@@ -113,6 +114,17 @@ const App = () => {
       </Grid>
       <Grid container sx={{ transition: "1s" }}>
         <ProjectCard
+          status="Sandbox"
+          title="Text Animation"
+          src={sandbox}
+          info={"Nav Bar Animations"}
+          bgColor="transparent"
+          buttonColor="#ffd283"
+          shadow="ffd283"
+          onClick={() => window.open("https://codesandbox.io/u/TareqFl")}
+        />
+
+        <ProjectCard
           status="live Website"
           title={"Custom T-Shirt Generator"}
           src={shirtShack}
@@ -177,7 +189,7 @@ const App = () => {
           }
           bgColor="black"
           shadow="#FFEEAD"
-          buttonColor="#FFEEAD"
+          buttonColor="white"
           onClick={() =>
             window.open("https://www.youtube.com/watch?v=DwtvLMmZAvk&t=21s")
           }
