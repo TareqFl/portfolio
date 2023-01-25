@@ -119,7 +119,7 @@ const App = () => {
           title={"www.eticketal.com"}
           src={eticket}
           info={
-            "a ticketing company that produces solutions to bring the consumer together with events"
+            "a ticketing company that produces solutions to bring the consumer together with events, a project I worked on with Cloud Group Istanbul"
           }
           bgColor="transparent"
           buttonColor="#ffd283"

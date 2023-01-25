@@ -138,7 +138,7 @@ const ProjectCard = ({
 
           <Typography className="title">{title}</Typography>
           <Divider sx={{ backgroundColor: "white" }} />
-          <Typography className="info">{info.substring(0, 100)}</Typography>
+          <Typography className="info">{info.substring(0, 100)}...</Typography>
         </Stack>
       </Paper>
     </Grid>
