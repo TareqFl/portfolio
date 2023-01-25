@@ -28,6 +28,7 @@ import shirtShack from "./Assets/shirtShack.png";
 import seat from "./Assets/seatGen.png";
 import stream from "./Assets/stream.png";
 import wtsp from "./Assets/whatsap.png";
+import eticket from "./Assets/eticket.png";
 import ec from "./Assets/e-commerve.png";
 import Aboutme from "./Components/AboutMe/Aboutme";
 import DisplayPicture from "./Components/DisplayPicture&Skills/DisplayPicture";
@@ -114,16 +115,17 @@ const App = () => {
       </Grid>
       <Grid container sx={{ transition: "1s" }}>
         <ProjectCard
-          status="Sandbox"
-          title="Text Animation"
-          src={sandbox}
-          info={"Nav Bar Animations"}
+          status="live Website"
+          title={"www.eticketal.com"}
+          src={eticket}
+          info={
+            "a ticketing company that produces solutions to bring the consumer together with events"
+          }
           bgColor="transparent"
           buttonColor="#ffd283"
-          shadow="ffd283"
-          onClick={() => window.open("https://codesandbox.io/u/TareqFl")}
+          shadow="#ffd283"
+          onClick={() => window.open("https://www.eticketal.com/")}
         />
-
         <ProjectCard
           status="live Website"
           title={"Custom T-Shirt Generator"}
@@ -153,7 +155,17 @@ const App = () => {
           }
         />
         <ProjectCard
-          status="live Website"
+          status="Sandbox"
+          title="Text Animation"
+          src={sandbox}
+          info={"Nav Bar Animations"}
+          bgColor="transparent"
+          buttonColor="#ffd283"
+          shadow="ffd283"
+          onClick={() => window.open("https://codesandbox.io/u/TareqFl")}
+        />
+        <ProjectCard
+          status="live Web-App"
           title={"Seat Chart Generator"}
           src={seat}
           info={
