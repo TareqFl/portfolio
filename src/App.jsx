@@ -32,10 +32,9 @@ import ec from "./Assets/e-commerve.png";
 import Aboutme from "./Components/AboutMe/Aboutme";
 import DisplayPicture from "./Components/DisplayPicture&Skills/DisplayPicture";
 import Skills from "./Components/DisplayPicture&Skills/Skills";
-import { setPage } from "./Actions";
-import { useDispatch } from "react-redux";
+
+import "./style.css";
 const App = () => {
-  const dispatch = useDispatch();
   const RepeatedSocialIcons = ({ icon, onClick }) => {
     return (
       <IconButton className="iconButton" size="small" onClick={onClick}>
@@ -126,10 +125,9 @@ const App = () => {
           bgColor="transparent"
           buttonColor="darkorange"
           shadow="black"
-          // onClick={() =>
-          //   window.open("https://tareqfl.github.io/T-shirt-Generator/")
-          // }
-          onClick={() => dispatch(setPage("eticket"))}
+          onClick={() =>
+            window.open("https://tareqfl.github.io/T-shirt-Generator/")
+          }
         />
         <ProjectCard
           status="Video"
@@ -141,10 +139,9 @@ const App = () => {
           bgColor="transparent"
           shadow="#99154E"
           buttonColor="#99154E"
-          // onClick={() =>
-          //   window.open("https://www.youtube.com/watch?v=UczVwMII5zM&t=4s")
-          // }
-          onClick={() => dispatch(setPage("eticket"))}
+          onClick={() =>
+            window.open("https://www.youtube.com/watch?v=UczVwMII5zM&t=4s")
+          }
         />
         <ProjectCard
           status="Sandbox"
@@ -154,8 +151,7 @@ const App = () => {
           bgColor="transparent"
           buttonColor="#ffd283"
           shadow="ffd283"
-          // onClick={() => window.open("https://codesandbox.io/u/TareqFl")}
-          onClick={() => dispatch(setPage("eticket"))}
+          onClick={() => window.open("https://codesandbox.io/u/TareqFl")}
         />
         <ProjectCard
           status="live Web-App"
@@ -167,10 +163,9 @@ const App = () => {
           bgColor="transparent"
           buttonColor="#FFAB4C"
           shadow="#FFAB4C"
-          // onClick={() =>
-          //   window.open("https://tareqfl.github.io/Seat-Chart-Generator-New/")
-          // }
-          onClick={() => dispatch(setPage("eticket"))}
+          onClick={() =>
+            window.open("https://tareqfl.github.io/Seat-Chart-Generator-New/")
+          }
         />
 
         <ProjectCard
@@ -181,10 +176,9 @@ const App = () => {
           bgColor="transparent"
           buttonColor="#9CC094"
           shadow="#9CC094"
-          // onClick={() =>
-          //   window.open("https://tareqfl.github.io/WhatsApp-Desktop-clone/")
-          // }
-          onClick={() => dispatch(setPage("eticket"))}
+          onClick={() =>
+            window.open("https://tareqfl.github.io/WhatsApp-Desktop-clone/")
+          }
         />
 
         <ProjectCard
@@ -197,10 +191,9 @@ const App = () => {
           bgColor="black"
           shadow="#FFEEAD"
           buttonColor="white"
-          // onClick={() =>
-          //   window.open("https://www.youtube.com/watch?v=DwtvLMmZAvk&t=21s")
-          // }
-          onClick={() => dispatch(setPage("eticket"))}
+          onClick={() =>
+            window.open("https://www.youtube.com/watch?v=DwtvLMmZAvk&t=21s")
+          }
         />
       </Grid>
 
