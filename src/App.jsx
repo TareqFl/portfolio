@@ -32,7 +32,7 @@ import ec from "./Assets/e-commerve.png";
 import Aboutme from "./Components/AboutMe/Aboutme";
 import DisplayPicture from "./Components/DisplayPicture&Skills/DisplayPicture";
 import Skills from "./Components/DisplayPicture&Skills/Skills";
-
+import eticket from "./Assets/eticketreal.jpg";
 import "./style.css";
 const App = () => {
   const RepeatedSocialIcons = ({ icon, onClick }) => {
@@ -115,6 +115,16 @@ const App = () => {
         <RepeatedTags text="BackEnd Engineer" />
       </Grid>
       <Grid container sx={{ transition: "1s" }}>
+        <ProjectCard
+          status="live Website"
+          title={"Eticketal.com"}
+          src={eticket}
+          info={"Event Hosting and E-ticket selling Platform"}
+          bgColor="transparent"
+          buttonColor="darkorange"
+          shadow="black"
+          onClick={() => window.open("https://www.eticketal.com/")}
+        />
         <ProjectCard
           status="live Website"
           title={"Custom T-Shirt Generator"}
