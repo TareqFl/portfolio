@@ -33,6 +33,7 @@ import Aboutme from "./Components/AboutMe/Aboutme";
 import DisplayPicture from "./Components/DisplayPicture&Skills/DisplayPicture";
 import Skills from "./Components/DisplayPicture&Skills/Skills";
 import eticket from "./Assets/eticketreal.jpg";
+import NFT from "./Assets/nft.jpg";
 import "./style.css";
 const App = () => {
   const RepeatedSocialIcons = ({ icon, onClick }) => {
@@ -124,6 +125,16 @@ const App = () => {
           buttonColor="darkorange"
           shadow="black"
           onClick={() => window.open("https://www.eticketal.com/")}
+        />
+        <ProjectCard
+          status="React Native EXPO Link"
+          title={"Pro Nft"}
+          src={NFT}
+          info={"NFT Exhibit Library"}
+          bgColor="transparent"
+          buttonColor="darkorange"
+          shadow="black"
+          onClick={() => window.open("exp://exp.host/@tareq_fleyfel/ProNFT")}
         />
         <ProjectCard
           status="live Website"

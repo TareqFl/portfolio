@@ -128,7 +128,16 @@ const ProjectCard = ({
             </IconButton>
           </Box>
 
-          <Box sx={{ overflow: "hidden", borderRadius: 4 }}>
+          <Box
+            sx={{
+              overflow: "hidden",
+              borderRadius: 4,
+              img: {
+                height: "100%",
+                width: "100%",
+              },
+            }}
+          >
             <img
               src={src}
               alt={src}
