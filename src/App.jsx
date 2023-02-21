@@ -118,6 +118,16 @@ const App = () => {
       <Grid container sx={{ transition: "1s" }}>
         <ProjectCard
           status="live Website"
+          title={"BestBuy.com"}
+          src={eticket}
+          info={"Cheapest and Best Deals Ecommmerce platform"}
+          bgColor="transparent"
+          buttonColor="darkorange"
+          shadow="black"
+          onClick={() => window.open("https://best-buy-ten.vercel.app/")}
+        />
+        <ProjectCard
+          status="live Website"
           title={"Eticketal.com"}
           src={eticket}
           info={"Event Hosting and E-ticket selling Platform"}
