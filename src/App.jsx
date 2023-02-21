@@ -118,7 +118,7 @@ const App = () => {
       </Grid>
       <Grid container sx={{ transition: "1s" }}>
         <ProjectCard
-          status="live Website"
+          status="live NextJS"
           title={"BestBuy.com"}
           src={BestBuy}
           info={"Cheapest and Best Deals Ecommmerce platform"}
