@@ -34,6 +34,7 @@ import DisplayPicture from "./Components/DisplayPicture&Skills/DisplayPicture";
 import Skills from "./Components/DisplayPicture&Skills/Skills";
 import eticket from "./Assets/eticketreal.jpg";
 import NFT from "./Assets/nft.jpg";
+import BestBuy from "./Assets/BESTBUY.png";
 import "./style.css";
 const App = () => {
   const RepeatedSocialIcons = ({ icon, onClick }) => {
@@ -119,7 +120,7 @@ const App = () => {
         <ProjectCard
           status="live Website"
           title={"BestBuy.com"}
-          src={eticket}
+          src={BestBuy}
           info={"Cheapest and Best Deals Ecommmerce platform"}
           bgColor="transparent"
           buttonColor="darkorange"
